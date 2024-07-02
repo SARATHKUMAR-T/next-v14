@@ -1,12 +1,17 @@
-import LoginForm from '@/app/ui/loginForm'
-import React from 'react'
+import LoginForm from "@/app/ui/loginForm";
+import { Metadata } from "next";
+import React from "react";
 
+export const metadata: Metadata = {
+  title: "Login",
+  description: "fb.io",
+};
 function Page() {
-    return (
-        <div className='flex items-center justify-center min-h-screen'>
-            <LoginForm />
-        </div>
-    )
+  return (
+    <main className="flex items-center justify-center min-h-screen">
+      <LoginForm />
+    </main>
+  );
 }
 
-export default Page
+export default Page;
